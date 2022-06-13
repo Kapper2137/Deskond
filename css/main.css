@@ -62,7 +62,8 @@ body {
   text-decoration: none;
   color: #f0f7f8;
   font-size: 20px;
-  padding: 10px;
+  -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .nav__item:hover {
