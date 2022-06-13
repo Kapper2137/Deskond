@@ -16,8 +16,20 @@ body {
 	background-color: #f0f7f8;
 }
 
-// header
 
+.nav {
+	&__items  {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}
+
+
+// header
 .header {
 	position: relative;
 	display: flex;
@@ -27,7 +39,7 @@ body {
 	padding: 2em;
 
 	background-color: rgb(124, 139, 156);
-	height: 75vh;
+	height: 80vh;
 	text-transform: uppercase;
 	// @include heroImages('../img/kod.jpg')
 
