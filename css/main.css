@@ -41,17 +41,32 @@ body {
   background-color: #f0f7f8;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+}
+
 .nav__items {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #f0f7f8;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav__item:hover {
+  color: aqua;
 }
 
 .header {

@@ -1,3 +1,4 @@
+@import './colors';
 @import './components';
 @import './mixins';
 
@@ -16,18 +17,28 @@ body {
 	background-color: #f0f7f8;
 }
 
-
 .nav {
-	&__items  {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	position: fixed;
+	top: 0;
 
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		
 	}
 
-}
+	&__item {
+		text-decoration: none;
+		color: #f0f7f8;
+		font-size: 20px;
+		padding: 10px;
+		}
 
+	&__item:hover {
+			color: aqua;
+		}
+}
 
 // header
 .header {
@@ -37,7 +48,6 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-
 	background-color: rgb(124, 139, 156);
 	height: 80vh;
 	text-transform: uppercase;
@@ -60,13 +70,6 @@ body {
 span {
 	color: rgb(29, 238, 158);
 }
-
-
-
-
-
-
-
 
 // ======================================
 // MEDIA
