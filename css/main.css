@@ -57,11 +57,26 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2em;
+  background-color: #7c8b9c;
   height: 75vh;
   text-transform: uppercase;
-  background-image: url("../img/kod.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+}
+
+.header__heading {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 0.5em;
+  -webkit-text-decoration: green wavy underline;
+          text-decoration: green wavy underline;
+}
+
+.header__text {
+  font-size: 1.4rem;
+  color: white;
+}
+
+span {
+  color: #1dee9e;
 }
 /*# sourceMappingURL=main.css.map */

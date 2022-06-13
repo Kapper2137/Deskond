@@ -25,15 +25,36 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
+
+	background-color: rgb(124, 139, 156);
 	height: 75vh;
 	text-transform: uppercase;
-	@include heroImages('../img/kod.jpg')
+	// @include heroImages('../img/kod.jpg')
 
+	&__heading {
+		font-family: 'Fira Sans', sans-serif;
+		font-weight: bold;
+		color: white;
+		padding: 0.5em;
+		text-decoration: green wavy underline;
+	}
 
-
-
-	
+	&__text {
+		font-size: 1.4rem;
+		color: white;
+	}
 }
+
+span {
+	color: rgb(29, 238, 158);
+}
+
+
+
+
+
+
+
 
 // ======================================
 // MEDIA
