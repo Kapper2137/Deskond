@@ -4,6 +4,27 @@
   max-width: 1200px;
 }
 
+.white-block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: white;
+}
+
+.white-block-left {
+  bottom: 0;
+  left: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.white-block-right {
+  bottom: 0;
+  right: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,82 +39,6 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f0f7f8;
-}
-
-.hero {
-  height: 100vh;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 5rem;
-}
-
-nav .logo {
-  color: white;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 42px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-nav span {
-  color: #29ded8;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #3aa430;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-button {
-  border: none;
-  padding: 12px 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: white;
-  z-index: -0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background-color: #576454;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  cursor: pointer;
-  overflow: hidden;
 }
 
 .header {
@@ -113,6 +58,10 @@ button:hover {
           flex-direction: column;
   padding: 2em;
   height: 75vh;
-  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../img/kod.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */

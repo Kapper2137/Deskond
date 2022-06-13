@@ -1,7 +1,7 @@
+@mixin heroImages ($bgImg) {
 
-@mixin  heroImages ($bgImg) {
-    background-attachment: fixed;
+    background-image: url($bgImg);
     background-size: cover;
-    background-position: center;
-
+	background-position: center;
+	background-attachment: fixed;
 }

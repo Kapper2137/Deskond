@@ -1,5 +1,5 @@
-@import "./components";
-@import "./mixins";
+@import './components';
+@import './mixins';
 
 * {
 	box-sizing: border-box;
@@ -16,79 +16,9 @@ body {
 	background-color: #f0f7f8;
 }
 
-.hero {
-	height: 100vh;
-	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
+// header
 
-nav {
-	
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 5rem;
-
-
-	
-	.logo {
-		color: white;
-		font-family: 'Bebas Neue', cursive;
-		font-size: 42px;
-		font-weight: bold;
-		text-transform: uppercase;
-
-	
-	}
-
-	span {
-		color: rgb(41, 222, 216);
-	}
-}
-nav ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 10px 20px;
-}
-
-nav ul li a {
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-nav ul li a:hover {
-	color: rgb(58, 164, 48);
-	transition: color 0.3s;
-}
-
-button {
-	border: none;
-	padding: 12px 30px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 18px;
-	color: white;
-	z-index: -0;
-	transition: 0.3s;
-	background-color: rgb(87, 100, 84);
-	border-radius: 8px;
-	cursor: pointer;
-}
-
-button:hover {
-	transform: scale(1.3);
-	cursor: pointer;
-	overflow: hidden;
-}
-
-
-
-.header { 
+.header {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -96,24 +26,15 @@ button:hover {
 	flex-direction: column;
 	padding: 2em;
 	height: 75vh;
-	text-align: center;
+	text-transform: uppercase;
+	@include heroImages('../img/kod.jpg')
+
+
+
+
 	
-
-
-
 }
 
-
-
-
-
 // ======================================
-// MEDIA 
+// MEDIA
 // =====================================
-
-
-
-
-
-
-

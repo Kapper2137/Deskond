@@ -6,3 +6,23 @@
 
 
 
+.white-block {
+    position: absolute;
+    height: 40px;
+    width: 60%;
+    background-color: white;
+
+    &-left {
+    bottom: 0;
+    left: -50px;
+    transform: skew(45deg);
+    }
+
+    &-right {
+        bottom: 0;
+        right: -50px;
+        transform: skew(45deg);
+    }
+
+}
+
