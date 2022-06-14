@@ -116,4 +116,42 @@ body {
 span {
   color: #1dee9e;
 }
+
+@media (min-width: 280px) {
+  .header__text {
+    padding: 0 1em;
+  }
+  .nav__item {
+    font-size: 10px;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    padding-top: 4em;
+    padding-left: 0.5em;
+  }
+}
+
+@media (min-width: 360px) {
+  .nav__item {
+    font-size: 13px;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    padding-top: 4em;
+    padding-left: 0.5em;
+  }
+}
+
+@media (min-width: 375px) {
+  .nav__item {
+    font-size: 13px;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 412px) {
+  .nav__item {
+    font-size: 0.9rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

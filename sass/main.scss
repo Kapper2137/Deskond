@@ -83,3 +83,63 @@ span {
 // ======================================
 // MEDIA
 // =====================================
+
+
+
+
+
+@media (min-width: 280px) {
+
+	.header { 
+
+
+
+		&__text {
+			padding: 0 1em;
+		}
+	}
+
+	.nav {
+		&__item {
+			font-size: 10px;
+			@include navBar 
+		}
+	}
+}
+
+@media (min-width: 360px) {
+
+
+
+
+	.nav {
+		&__item {
+			font-size: 13px;
+			@include navBar 
+		}
+	}
+
+}
+
+
+@media (min-width: 375px){
+	.nav {
+		&__item {
+			font-size: 13px;
+			transform: translateY(-60%);
+			padding-top: 4rem;
+		}
+	}
+	
+}
+
+
+@media (min-width: 412px) {
+	.nav { 
+		&__item {
+			font-size: 0.9rem;
+		}
+	}
+}
+
+
