@@ -53,15 +53,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .nav__item {
   text-decoration: none;
   color: #f0f7f8;
   font-size: 20px;
+  padding: 0 2em;
+  padding-top: 1rem;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  text-transform: uppercase;
   -webkit-transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -86,7 +91,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2em;
-  background-color: #7c8b9c;
+  background-image: url("../img/kod1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 80vh;
   text-transform: uppercase;
 }

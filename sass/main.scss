@@ -21,23 +21,29 @@ body {
 	position: fixed;
 	top: 0;
 
+
 	&__items {
+	
 		display: flex;
 		align-items: center;
-		justify-content:center;
-		
+		justify-content: space-evenly;
+
 	}
 
 	&__item {
 		text-decoration: none;
 		color: #f0f7f8;
 		font-size: 20px;
-
-
+		padding: 0 2em;
+		padding-top: 1rem;
+		transform: translateX(60%);
+		text-transform: uppercase;
 		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+
 		}
 
 	&__item:hover {
+
 			color: aqua;
 		}
 }
@@ -50,10 +56,10 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-	background-color: rgb(124, 139, 156);
+	// background-color: rgb(124, 139, 156);
+	@include heroImages('../img/kod1.jpg');
 	height: 80vh;
 	text-transform: uppercase;
-	// @include heroImages('../img/kod.jpg')
 
 	&__heading {
 		font-family: 'Fira Sans', sans-serif;
@@ -66,6 +72,7 @@ body {
 	&__text {
 		font-size: 1.4rem;
 		color: white;
+
 	}
 }
 
