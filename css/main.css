@@ -4,6 +4,20 @@
   max-width: 1200px;
 }
 
+.section-padding {
+  padding: 6em 2em;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0fc136;
+}
+
 .white-block {
   position: absolute;
   height: 40px;
@@ -44,6 +58,7 @@ body {
 .nav {
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 .nav__items {
@@ -115,6 +130,30 @@ body {
 
 span {
   color: #1dee9e;
+}
+
+.staff {
+  background: radial-gradient(circle, #2b2c2e 13%, #191919 65%);
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+}
+
+.cards .card {
+  position: relative;
+  margin: 10px;
+}
+
+.cards .one {
+  background-image: url("../img/kamil.jpg");
+}
+
+.cards .two {
+  background-image: url("../img/karol.jpg");
 }
 
 @media (min-width: 280px) {

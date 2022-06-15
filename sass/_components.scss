@@ -4,7 +4,22 @@
     max-width: 1200px;
 }
 
+.section-padding {
+	padding: 6em 2em;
+	// 6em paddingu gora dół i 2em paddingu po bokach
+}
 
+.section-heading {
+    position: relative;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(15, 193, 54);
+
+
+}
 
 .white-block {
     position: absolute;

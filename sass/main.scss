@@ -15,11 +15,13 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f0f7f8;
+	// dodane podczas robienia sekcji staff jak cos nie bedzie dzialac to usunac to 
 }
 
 .nav {
 	position: fixed;
 	top: 0;
+	z-index: 1000;
 
 
 	&__items {
@@ -80,6 +82,39 @@ span {
 	color: rgb(29, 238, 158);
 }
 
+
+.staff {
+    background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
+}
+	.cards {
+		display: flex;
+		width: 1000px;
+		
+		.card {
+			position: relative;
+			margin: 10px;
+
+		}
+
+
+		.one {
+			background-image: url('../img/kamil.jpg');
+		}
+
+		
+		.two {
+			background-image: url('../img/karol.jpg');
+		}
+	}
+
+
+
+
+
+
+
+
+
 // ======================================
 // MEDIA
 // =====================================
@@ -96,6 +131,7 @@ span {
 
 		&__text {
 			padding: 0 1em;
+
 		}
 	}
 
