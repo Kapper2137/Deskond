@@ -77,7 +77,6 @@ body {
   text-decoration: none;
   color: #f0f7f8;
   font-size: 20px;
-  padding: 0 2em;
   padding-top: 1rem;
   -webkit-transform: translateX(60%);
           transform: translateX(60%);
@@ -136,17 +135,25 @@ span {
   background: radial-gradient(circle, #2b2c2e 13%, #191919 65%);
 }
 
-.cards {
+.staff h2 {
+  -webkit-text-decoration: #4b637c wavy underline;
+          text-decoration: #4b637c wavy underline;
+}
+
+.staff .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 1000px;
+  z-index: -1000;
 }
 
-.cards .card {
+.staff .cards .card {
   position: relative;
-  margin: 10px;
-  height: 800px;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  margin: 1.6rem;
+  height: 500px;
   width: 50%;
   text-align: center;
   background-position: center;
@@ -157,15 +164,15 @@ span {
   overflow: hidden;
 }
 
-.cards .one {
+.staff .cards .one {
   background-image: url("../img/kamil.jpg");
 }
 
-.cards .two {
+.staff .cards .two {
   background-image: url("../img/karol.jpg");
 }
 
-.cards .btn {
+.staff .cards .btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -179,12 +186,12 @@ span {
   z-index: 10;
 }
 
-.cards .btn:hover ~ .text {
+.staff .cards .btn:hover ~ .text {
   -webkit-clip-path: circle(120% at 50% 90%);
           clip-path: circle(120% at 50% 90%);
 }
 
-.cards .text {
+.staff .cards .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,11 +218,11 @@ span {
   transition: clip-path .8s, -webkit-clip-path .8s;
 }
 
-.cards h1 {
+.staff .cards h1 {
   color: #b6b361;
 }
 
-.cards h2 {
+.staff .cards h2 {
   margin-bottom: 30px;
   color: #8d8a8a;
 }

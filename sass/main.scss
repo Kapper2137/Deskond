@@ -32,7 +32,6 @@ body {
 		text-decoration: none;
 		color: #f0f7f8;
 		font-size: 20px;
-		padding: 0 2em;
 		padding-top: 1rem;
 		transform: translateX(60%);
 		text-transform: uppercase;
@@ -77,15 +76,21 @@ span {
 
 .staff {
 	background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
-}
+
+	h2 {
+		text-decoration: rgb(75, 99, 124) wavy underline;
+	}
+
 .cards {
 	display: flex;
 	width: 1000px;
+	z-index: -1000;
 
 	.card {
 		position: relative;
-		margin: 10px;
-		height: 800px;
+		transform: translateX(60%);
+		margin: 1.6rem;
+		height: 500px;
 		width: 50%;
 		text-align: center;
 		background-position: center;
@@ -147,6 +152,7 @@ span {
 		margin-bottom: 30px;
 		color: rgb(141,138,138);
 	}
+}
 }
 
 // ======================================
