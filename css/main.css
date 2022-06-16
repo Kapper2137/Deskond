@@ -146,6 +146,15 @@ span {
 .cards .card {
   position: relative;
   margin: 10px;
+  height: 800px;
+  width: 50%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.7);
+          box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 
 .cards .one {
@@ -154,6 +163,61 @@ span {
 
 .cards .two {
   background-image: url("../img/karol.jpg");
+}
+
+.cards .btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2.25rem;
+  text-shadow: 2px 2px 5px black;
+  cursor: crosshair;
+  z-index: 10;
+}
+
+.cards .btn:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.cards .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  -webkit-clip-path: circle(0% at 50% 90%);
+          clip-path: circle(0% at 50% 90%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
+}
+
+.cards h1 {
+  color: #b6b361;
+}
+
+.cards h2 {
+  margin-bottom: 30px;
+  color: #8d8a8a;
 }
 
 @media (min-width: 280px) {

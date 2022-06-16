@@ -15,7 +15,6 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f0f7f8;
-	// dodane podczas robienia sekcji staff jak cos nie bedzie dzialac to usunac to 
 }
 
 .nav {
@@ -23,13 +22,10 @@ body {
 	top: 0;
 	z-index: 1000;
 
-
 	&__items {
-	
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-
 	}
 
 	&__item {
@@ -41,13 +37,11 @@ body {
 		transform: translateX(60%);
 		text-transform: uppercase;
 		transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-
-		}
+	}
 
 	&__item:hover {
-
-			color: aqua;
-		}
+		color: aqua;
+	}
 }
 
 // header
@@ -74,7 +68,6 @@ body {
 	&__text {
 		font-size: 1.4rem;
 		color: white;
-
 	}
 }
 
@@ -82,83 +75,109 @@ span {
 	color: rgb(29, 238, 158);
 }
 
-
 .staff {
-    background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
+	background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
 }
-	.cards {
-		display: flex;
-		width: 1000px;
-		
-		.card {
-			position: relative;
-			margin: 10px;
+.cards {
+	display: flex;
+	width: 1000px;
 
-		}
-
-
-		.one {
-			background-image: url('../img/kamil.jpg');
-		}
-
-		
-		.two {
-			background-image: url('../img/karol.jpg');
-		}
+	.card {
+		position: relative;
+		margin: 10px;
+		height: 800px;
+		width: 50%;
+		text-align: center;
+		background-position: center;
+		background-size: cover;
+		border-radius: 15px;
+		box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.7);
+		overflow: hidden;
 	}
 
+	.one {
+		background-image: url('../img/kamil.jpg');
+	}
 
+	.two {
+		background-image: url('../img/karol.jpg');
+	}
 
+	.btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		background: none;
+		border: none;
+		color: #ffffff;
+		font-size: 2.25rem;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+		cursor: crosshair;
+		z-index: 10;
+	}
 
+	.btn:hover~.text {
+		clip-path: circle(120% at 50% 90%);
 
+	}
+	// po najechaniu na button pokaze nam sie text
 
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 80px 30px;
+		background-color: rgba(0, 0, 0, .85);
+		color: #ffffff;
+		clip-path: circle(0% at 50% 90%);
+		transition: clip-path .8s;
 
+	}
 
+	h1 {
+		color: rgb(182, 179, 97);
+	}
+	h2 {
+		margin-bottom: 30px;
+		color: rgb(141,138,138);
+	}
+}
 
 // ======================================
 // MEDIA
 // =====================================
 
-
-
-
-
 @media (min-width: 280px) {
-
-	.header { 
-
-
-
+	.header {
 		&__text {
 			padding: 0 1em;
-
 		}
 	}
 
 	.nav {
 		&__item {
 			font-size: 10px;
-			@include navBar 
+			@include navBar;
 		}
 	}
 }
 
 @media (min-width: 360px) {
-
-
-
-
 	.nav {
 		&__item {
 			font-size: 13px;
-			@include navBar 
+			@include navBar;
 		}
 	}
-
 }
 
-
-@media (min-width: 375px){
+@media (min-width: 375px) {
 	.nav {
 		&__item {
 			font-size: 13px;
@@ -166,16 +185,12 @@ span {
 			padding-top: 4rem;
 		}
 	}
-	
 }
 
-
 @media (min-width: 412px) {
-	.nav { 
+	.nav {
 		&__item {
 			font-size: 0.9rem;
 		}
 	}
 }
-
-
