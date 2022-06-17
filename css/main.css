@@ -166,10 +166,12 @@ span {
 
 .staff .cards .one {
   background-image: url("../img/kamil.jpg");
+  overflow: hidden;
 }
 
 .staff .cards .two {
   background-image: url("../img/karol.jpg");
+  overflow: hidden;
 }
 
 .staff .cards .btn {
@@ -212,10 +214,10 @@ span {
   color: #ffffff;
   -webkit-clip-path: circle(0% at 50% 90%);
           clip-path: circle(0% at 50% 90%);
-  -webkit-transition: -webkit-clip-path .8s;
-  transition: -webkit-clip-path .8s;
-  transition: clip-path .8s;
-  transition: clip-path .8s, -webkit-clip-path .8s;
+  -webkit-transition: -webkit-clip-path 0.8s;
+  transition: -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s;
+  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
 }
 
 .staff .cards h1 {
@@ -257,17 +259,31 @@ span {
             transform: translateY(-60%);
     padding-top: 4rem;
   }
+  .staff .one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("../img/mobile.jpg");
+  }
+  .staff .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url("../img/mobile.jpg");
+  }
 }
 
 @media (min-width: 412px) {
   .nav__item {
     font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .card .one {
-    background-image: "../img/mobile.jpg";
   }
 }
 /*# sourceMappingURL=main.css.map */

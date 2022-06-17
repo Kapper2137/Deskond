@@ -80,78 +80,78 @@ span {
 	.section-heading {
 		text-decoration: rgb(75, 99, 124) wavy underline;
 	}
-.cards {
-	display: flex;
-	width: 1000px;
-	z-index: -1000;
-
-	.card {
-		position: relative;
-		transform: translateX(60%);
-		margin: 1.6rem;
-		height: 500px;
-		width: 50%;
-		text-align: center;
-		background-position: center;
-		background-size: cover;
-		border-radius: 15px;
-		box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.7);
-		overflow: hidden;
-	}
-
-	.one {
-		background-image: url('../img/kamil.jpg');
-	}
-
-	.two {
-		background-image: url('../img/karol.jpg');
-	}
-
-	.btn {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		padding: 10px;
-		background: none;
-		border: none;
-		color: #ffffff;
-		font-size: 2.25rem;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-		cursor: crosshair;
-		z-index: 10;
-	}
-
-	.btn:hover~.text {
-		clip-path: circle(120% at 50% 90%);
-
-	}
-	// po najechaniu na button pokaze nam sie text
-
-	.text {
+	.cards {
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		padding: 80px 30px;
-		background-color: rgba(0, 0, 0, .85);
-		color: #ffffff;
-		clip-path: circle(0% at 50% 90%);
-		transition: clip-path .8s;
+		width: 1000px;
+		z-index: -1000;
 
-	}
+		.card {
+			position: relative;
+			transform: translateX(60%);
+			margin: 1.6rem;
+			height: 500px;
+			width: 50%;
+			text-align: center;
+			background-position: center;
+			background-size: cover;
+			border-radius: 15px;
+			box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.7);
+			overflow: hidden;
+		}
 
-	h1 {
-		color: rgb(182, 179, 97);
+		.one {
+			background-image: url('../img/kamil.jpg');
+			overflow: hidden;
+		}
+
+		.two {
+			background-image: url('../img/karol.jpg');
+			overflow: hidden;
+		}
+
+		.btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 10px;
+			background: none;
+			border: none;
+			color: #ffffff;
+			font-size: 2.25rem;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+			cursor: crosshair;
+			z-index: 10;
+		}
+
+		.btn:hover~.text {
+			clip-path: circle(120% at 50% 90%);
+		}
+		// po najechaniu na button pokaze nam sie text
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			padding: 80px 30px;
+			background-color: rgba(0, 0, 0, 0.85);
+			color: #ffffff;
+			clip-path: circle(0% at 50% 90%);
+			transition: clip-path 0.8s;
+		}
+
+		h1 {
+			color: rgb(182, 179, 97);
+		}
+		h2 {
+			margin-bottom: 30px;
+			color: rgb(141, 138, 138);
+		}
 	}
-	h2 {
-		margin-bottom: 30px;
-		color: rgb(141,138,138);
-	}
-}
 }
 
 // ======================================
@@ -165,15 +165,13 @@ span {
 		}
 	}
 
+
 	.nav {
 		&__item {
 			font-size: 10px;
 			@include navBar;
 		}
 	}
-
-
-
 
 }
 
@@ -194,6 +192,23 @@ span {
 			padding-top: 4rem;
 		}
 	}
+
+
+	.staff { 
+		.one {
+			display: flex;
+			flex-direction: column;
+			background-image: url("../img/mobile.jpg");
+		}
+
+		.two { 
+			display: flex;
+			flex-direction: column;
+			background-image: url("../img/mobile.jpg");
+		}
+	}
+
+
 }
 
 @media (min-width: 412px) {
@@ -205,10 +220,4 @@ span {
 }
 
 
-@media (min-width: 992px) {
-	.card { 
-		.one {
-			background-image: "../img/mobile.jpg";
-		}
-	}
-}
+
