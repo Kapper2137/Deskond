@@ -82,11 +82,11 @@ span {
 	}
 	.cards {
 		display: flex;
+		flex-direction: row;
 		width: 1000px;
 		z-index: -1000;
 
 		.card {
-			position: relative;
 			transform: translateX(60%);
 			margin: 1.6rem;
 			height: 500px;
@@ -101,12 +101,12 @@ span {
 
 		.one {
 			background-image: url('../img/kamil.jpg');
-			overflow: hidden;
+			display: flex;
+			flex-direction: row;
 		}
 
 		.two {
 			background-image: url('../img/karol.jpg');
-			overflow: hidden;
 		}
 
 		.btn {
@@ -123,8 +123,8 @@ span {
 			z-index: 10;
 		}
 
-		.btn:hover~.text {
-			clip-path: circle(120% at 50% 90%);
+		.btn:hover ~ .text {
+			clip-path: circle(160% at 50% 90%);
 		}
 		// po najechaniu na button pokaze nam sie text
 
@@ -165,7 +165,6 @@ span {
 		}
 	}
 
-
 	.nav {
 		&__item {
 			font-size: 10px;
@@ -173,6 +172,14 @@ span {
 		}
 	}
 
+
+	.staff {
+		.cards {
+			overflow-x: hidden;
+			max-width: 100%;
+			flex-direction: column;
+		}
+	}
 }
 
 @media (min-width: 360px) {
@@ -193,22 +200,21 @@ span {
 		}
 	}
 
-
-	.staff { 
-		.one {
-			display: flex;
+	.staff {
+		.cards {
+			overflow-x: hidden;
+			max-width: 100%;
 			flex-direction: column;
-			background-image: url("../img/mobile.jpg");
-		}
 
-		.two { 
-			display: flex;
-			flex-direction: column;
-			background-image: url("../img/mobile.jpg");
+			.btn {
+				position: relative;
+			
+				
+				
+	
+			}
 		}
 	}
-
-
 }
 
 @media (min-width: 412px) {
@@ -218,6 +224,3 @@ span {
 		}
 	}
 }
-
-
-

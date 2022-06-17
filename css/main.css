@@ -144,12 +144,15 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 1000px;
   z-index: -1000;
 }
 
 .staff .cards .card {
-  position: relative;
   -webkit-transform: translateX(60%);
           transform: translateX(60%);
   margin: 1.6rem;
@@ -166,12 +169,17 @@ span {
 
 .staff .cards .one {
   background-image: url("../img/kamil.jpg");
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .staff .cards .two {
   background-image: url("../img/karol.jpg");
-  overflow: hidden;
 }
 
 .staff .cards .btn {
@@ -189,8 +197,8 @@ span {
 }
 
 .staff .cards .btn:hover ~ .text {
-  -webkit-clip-path: circle(120% at 50% 90%);
-          clip-path: circle(120% at 50% 90%);
+  -webkit-clip-path: circle(160% at 50% 90%);
+          clip-path: circle(160% at 50% 90%);
 }
 
 .staff .cards .text {
@@ -240,6 +248,14 @@ span {
     padding-top: 4em;
     padding-left: 0.5em;
   }
+  .staff .cards {
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 360px) {
@@ -259,25 +275,16 @@ span {
             transform: translateY(-60%);
     padding-top: 4rem;
   }
-  .staff .one {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .staff .cards {
+    overflow-x: hidden;
+    max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("../img/mobile.jpg");
   }
-  .staff .two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-image: url("../img/mobile.jpg");
+  .staff .cards .btn {
+    position: relative;
   }
 }
 
