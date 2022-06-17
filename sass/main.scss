@@ -77,10 +77,9 @@ span {
 .staff {
 	background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
 
-	h2 {
+	.section-heading {
 		text-decoration: rgb(75, 99, 124) wavy underline;
 	}
-
 .cards {
 	display: flex;
 	width: 1000px;
@@ -172,6 +171,10 @@ span {
 			@include navBar;
 		}
 	}
+
+
+
+
 }
 
 @media (min-width: 360px) {
@@ -197,6 +200,15 @@ span {
 	.nav {
 		&__item {
 			font-size: 0.9rem;
+		}
+	}
+}
+
+
+@media (min-width: 992px) {
+	.card { 
+		.one {
+			background-image: "../img/mobile.jpg";
 		}
 	}
 }
