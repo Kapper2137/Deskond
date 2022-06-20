@@ -162,6 +162,7 @@ span {
 	.header {
 		&__text {
 			padding: 0 1em;
+			margin-left: 46px;
 		}
 	}
 
@@ -172,12 +173,17 @@ span {
 		}
 	}
 
-
 	.staff {
 		.cards {
-			overflow-x: hidden;
-			max-width: 100%;
-			flex-direction: column;
+			@include columnBar;
+			.one {
+				font-size: 7.9px;
+				margin-right: 120px;
+			}
+
+			.two {
+				font-size: 10px;
+			}
 		}
 	}
 }
@@ -189,9 +195,29 @@ span {
 			@include navBar;
 		}
 	}
+
+	.staff {
+		.cards {
+			@include columnBar;
+
+			.one {
+				font-size: 10px;
+			}
+
+			.two {
+				font-size: 11px;
+			}
+		}
+	}
 }
 
 @media (min-width: 375px) {
+	.header {
+		&__text {
+			margin-left: 55px;
+		}
+	}
+
 	.nav {
 		&__item {
 			font-size: 13px;
@@ -202,16 +228,15 @@ span {
 
 	.staff {
 		.cards {
-			overflow-x: hidden;
-			max-width: 100%;
-			flex-direction: column;
+			@include columnBar;
+			margin-right: 100px;
 
-			.btn {
-				position: relative;
-			
-				
-				
-	
+			.one {
+				font-size: 10px;
+			}
+
+			.two {
+				font-size: 11px;
 			}
 		}
 	}
@@ -221,6 +246,50 @@ span {
 	.nav {
 		&__item {
 			font-size: 0.9rem;
+		}
+	}
+
+	.staff {
+		.cards {
+			@include columnBar;
+
+			.one {
+				h1,
+				h2 {
+					font-size: 0.7rem;
+				}
+				p {
+					font-size: 13px;
+				}
+			}
+
+			.two {
+				h1,
+				h2 {
+					font-size: 0.7rem;
+				}
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 540px) {
+	.header {
+		&__text {
+			margin-left: 120px;
+		}
+	}
+}
+
+@media (min-width: 820px) {
+	.staff {
+		.cards {
+			.one {
+				font-size: 200px;
+			}
 		}
 	}
 }
