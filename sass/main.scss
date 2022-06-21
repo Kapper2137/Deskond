@@ -157,6 +157,10 @@ span {
 
 // OPINIONS
 .opinions {
+
+	h2 {
+		color: rgb(41, 101, 169);
+	}
 	&__box {
 		position: relative;
 		margin: 2em;
@@ -169,6 +173,33 @@ span {
 			transform: scale(0.95);
 		}
 
+	}
+
+
+	&__box-img { 
+		position: absolute;
+		top: 8%;
+		left: 75%;
+		transform: translate(-50%, -50%);
+
+		img { 
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__box-quote {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		color: #2e2cb4
+	}
+
+
+	&__box-text{
+		margin-bottom: 1em;
+		font-size: 1.4rem;
+		color: #2e2e2e;
 	}
 
 }

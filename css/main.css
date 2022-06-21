@@ -237,6 +237,10 @@ span {
   color: #8d8a8a;
 }
 
+.opinions h2 {
+  color: #2965a9;
+}
+
 .opinions__box {
   position: relative;
   margin: 2em;
@@ -253,6 +257,34 @@ span {
 .opinions__box:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+.opinions__box-img {
+  position: absolute;
+  top: 8%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.opinions__box-img img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.opinions__box-quote {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  color: #2e2cb4;
+}
+
+.opinions__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: #2e2e2e;
 }
 
 @media (min-width: 280px) {
