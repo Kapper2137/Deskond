@@ -76,7 +76,6 @@ span {
 
 .staff {
 	background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
-
 	.section-heading {
 		text-decoration: rgb(75, 99, 124) wavy underline;
 	}
@@ -87,7 +86,7 @@ span {
 		z-index: -1000;
 
 		.card {
-			transform: translateX(60%);
+			position: relative;
 			margin: 1.6rem;
 			height: 500px;
 			width: 50%;

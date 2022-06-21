@@ -8,6 +8,10 @@
   padding: 6em 2em;
 }
 
+.staff-padding {
+  padding: 6em 0em;
+}
+
 .section-heading {
   position: relative;
   margin-bottom: 2em;
@@ -153,8 +157,7 @@ span {
 }
 
 .staff .cards .card {
-  -webkit-transform: translateX(60%);
-          transform: translateX(60%);
+  position: relative;
   margin: 1.6rem;
   height: 500px;
   width: 50%;
