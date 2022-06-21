@@ -237,6 +237,24 @@ span {
   color: #8d8a8a;
 }
 
+.opinions__box {
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 10px #2e2e2e2e;
+          box-shadow: 3px 3px 10px #2e2e2e2e;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.opinions__box:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 @media (min-width: 280px) {
   .header__text {
     padding: 0 1em;
