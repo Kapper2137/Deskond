@@ -87,7 +87,7 @@ span {
 
 		.card {
 			position: relative;
-			margin: 1.6rem;
+			margin: 70px;
 			height: 500px;
 			width: 50%;
 			text-align: center;
@@ -220,19 +220,83 @@ span {
 		.cards {
 			@include columnBar;
 			.one {
-				font-size: 7.9px;
-
-				margin-right: 500px;
+				h1,
+				h2 {
+					font-size: 1.5rem;
+				}
+				p {
+					font-size: 7.9px;
+				}
 			}
 
 			.two {
-				font-size: 10px;
+				h1,
+				h2 {
+					font-size: 1.5rem;
+				}
+				p {
+					font-size: 7.9px;
+				}
 			}
 		}
 	}
+
+
+	.opinions  {
+	
+		&__box-quote {
+			margin-bottom: 1em;
+			font-size: 20px;
+			color: #2e2cb4;
+		}
+
+
+		&__box-img {
+			position: absolute;
+			top: 8%;
+			left: 75%;
+			transform: translate(-50%, -50%);
+	
+			img {
+				width: 60px;
+				height: 60px;
+				object-fit: cover;
+				border-radius: 50%;
+		
+			}
+		}
+
+		.opinions__box-text {
+			font-size: 16px;
+		}
+
+	}
+
+
+
+	.contact { 
+		position: relative;
+		background-color: white;
+
+	
+	}
+
+
+
 }
 
 @media (min-width: 360px) {
+
+
+	.header {
+		&__text {
+			padding: 0 2em;
+			margin-left: 50px;
+		}
+	}
+
+
+
 	.nav {
 		&__item {
 			font-size: 13px;
@@ -243,11 +307,15 @@ span {
 	.staff {
 		.cards {
 			.one {
-				font-size: 10px;
+				p { 
+					font-size: 12px;
+				}
 			}
 
 			.two {
-				font-size: 11px;
+				p {
+					font-size: 12px;
+				}
 			}
 		}
 	}
@@ -282,6 +350,22 @@ span {
 		}
 	}
 }
+@media (min-width: 390px) { 
+	.header {
+		&__text {
+			padding: 0 2em;
+			margin-left: 50px;
+		}
+	}
+}
+@media (min-width: 393px)  {
+	.header {
+		&__text {
+			padding: 0 3em;
+			margin-left: 50px;
+		}
+	}
+}
 
 @media (min-width: 412px) {
 	.nav {
@@ -295,7 +379,7 @@ span {
 			.one {
 				h1,
 				h2 {
-					font-size: 0.7rem;
+					font-size: 2rem;
 				}
 				p {
 					font-size: 13px;
@@ -305,10 +389,10 @@ span {
 			.two {
 				h1,
 				h2 {
-					font-size: 0.7rem;
+					font-size: 2rem;
 				}
 				p {
-					font-size: 13px;
+					font-size: 15px;
 				}
 			}
 		}
@@ -323,11 +407,50 @@ span {
 	}
 }
 
+@media (min-width: 768px) {
+	.staff {
+		.cards {
+			.one {
+				p {
+					font-size: 18px;
+				}
+			}
+			.two {
+				p { 
+					font-size: 23px;
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 820px) {
 	.staff {
 		.cards {
 			.one {
 				font-size: 200px;
+			}
+		}
+	}
+}
+
+@media (min-width: 912px) {
+	.staff {
+		.cards {
+			.one {
+				h1,
+				h2 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+
+			.two {
+				p {
+					font-size: 24px;
+				}
 			}
 		}
 	}
@@ -339,10 +462,24 @@ span {
 			display: flex;
 			flex-direction: row;
 
-			.card {
-				height: 500px;
-				min-width: 400px;
-		
+			.one {
+				h1,
+				h2 {
+					font-size: 1.5rem;
+				}
+				p {
+					font-size: 13px;
+				}
+			}
+
+			.two {
+				h1,
+				h2 {
+					font-size: 1.5rem;
+				}
+				p {
+					font-size: 13px;
+				}
 			}
 		}
 	}

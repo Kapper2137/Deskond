@@ -158,7 +158,7 @@ span {
 
 .staff .cards .card {
   position: relative;
-  margin: 1.6rem;
+  margin: 70px;
   height: 500px;
   width: 50%;
   text-align: center;
@@ -310,16 +310,53 @@ span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .staff .cards .one {
-    font-size: 7.9px;
-    margin-right: 500px;
+  .staff .cards .one h1,
+  .staff .cards .one h2 {
+    font-size: 1.5rem;
   }
-  .staff .cards .two {
-    font-size: 10px;
+  .staff .cards .one p {
+    font-size: 7.9px;
+  }
+  .staff .cards .two h1,
+  .staff .cards .two h2 {
+    font-size: 1.5rem;
+  }
+  .staff .cards .two p {
+    font-size: 7.9px;
+  }
+  .opinions__box-quote {
+    margin-bottom: 1em;
+    font-size: 20px;
+    color: #2e2cb4;
+  }
+  .opinions__box-img {
+    position: absolute;
+    top: 8%;
+    left: 75%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .opinions__box-img img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  .opinions .opinions__box-text {
+    font-size: 16px;
+  }
+  .contact {
+    position: relative;
+    background-color: white;
   }
 }
 
 @media (min-width: 360px) {
+  .header__text {
+    padding: 0 2em;
+    margin-left: 50px;
+  }
   .nav__item {
     font-size: 13px;
     -webkit-transform: translateY(-60%);
@@ -327,11 +364,11 @@ span {
     padding-top: 4em;
     padding-left: 0.5em;
   }
-  .staff .cards .one {
-    font-size: 10px;
+  .staff .cards .one p {
+    font-size: 12px;
   }
-  .staff .cards .two {
-    font-size: 11px;
+  .staff .cards .two p {
+    font-size: 12px;
   }
 }
 
@@ -356,23 +393,37 @@ span {
   }
 }
 
+@media (min-width: 390px) {
+  .header__text {
+    padding: 0 2em;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 393px) {
+  .header__text {
+    padding: 0 3em;
+    margin-left: 50px;
+  }
+}
+
 @media (min-width: 412px) {
   .nav__item {
     font-size: 0.9rem;
   }
   .staff .cards .one h1,
   .staff .cards .one h2 {
-    font-size: 0.7rem;
+    font-size: 2rem;
   }
   .staff .cards .one p {
     font-size: 13px;
   }
   .staff .cards .two h1,
   .staff .cards .two h2 {
-    font-size: 0.7rem;
+    font-size: 2rem;
   }
   .staff .cards .two p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -382,9 +433,31 @@ span {
   }
 }
 
+@media (min-width: 768px) {
+  .staff .cards .one p {
+    font-size: 18px;
+  }
+  .staff .cards .two p {
+    font-size: 23px;
+  }
+}
+
 @media (min-width: 820px) {
   .staff .cards .one {
     font-size: 200px;
+  }
+}
+
+@media (min-width: 912px) {
+  .staff .cards .one h1,
+  .staff .cards .one h2 {
+    font-size: 24px;
+  }
+  .staff .cards .one p {
+    font-size: 24px;
+  }
+  .staff .cards .two p {
+    font-size: 24px;
   }
 }
 
@@ -398,9 +471,19 @@ span {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .staff .cards .card {
-    height: 500px;
-    min-width: 400px;
+  .staff .cards .one h1,
+  .staff .cards .one h2 {
+    font-size: 1.5rem;
+  }
+  .staff .cards .one p {
+    font-size: 13px;
+  }
+  .staff .cards .two h1,
+  .staff .cards .two h2 {
+    font-size: 1.5rem;
+  }
+  .staff .cards .two p {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=main.css.map */
