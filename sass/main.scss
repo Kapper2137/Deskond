@@ -153,13 +153,10 @@ span {
 	}
 }
 
-
 // OPINIONS
 .opinions {
-
 	h2 {
 		color: rgb(41, 101, 169);
-
 	}
 	&__box {
 		position: relative;
@@ -172,17 +169,15 @@ span {
 		&:hover {
 			transform: scale(0.95);
 		}
-
 	}
 
-
-	&__box-img { 
+	&__box-img {
 		position: absolute;
 		top: 8%;
 		left: 75%;
 		transform: translate(-50%, -50%);
 
-		img { 
+		img {
 			width: 80px;
 			height: 80px;
 			object-fit: cover;
@@ -192,22 +187,15 @@ span {
 	&__box-quote {
 		margin-bottom: 1em;
 		font-size: 3rem;
-		color: #2e2cb4
+		color: #2e2cb4;
 	}
 
-
-	&__box-text{
+	&__box-text {
 		margin-bottom: 1em;
 		font-size: 1.4rem;
 		color: #2e2e2e;
 	}
-
 }
-
-
-
-
-
 
 // ======================================
 // MEDIA
@@ -233,7 +221,7 @@ span {
 			@include columnBar;
 			.one {
 				font-size: 7.9px;
-			
+
 				margin-right: 500px;
 			}
 
@@ -243,9 +231,6 @@ span {
 		}
 	}
 }
-
-
-
 
 @media (min-width: 360px) {
 	.nav {
@@ -257,8 +242,6 @@ span {
 
 	.staff {
 		.cards {
-			@include columnBar;
-
 			.one {
 				font-size: 10px;
 			}
@@ -287,7 +270,6 @@ span {
 
 	.staff {
 		.cards {
-			@include columnBar;
 			margin-right: 100px;
 
 			.one {
@@ -310,8 +292,6 @@ span {
 
 	.staff {
 		.cards {
-			@include columnBar;
-
 			.one {
 				h1,
 				h2 {
@@ -348,6 +328,21 @@ span {
 		.cards {
 			.one {
 				font-size: 200px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.staff {
+		.cards {
+			display: flex;
+			flex-direction: row;
+
+			.card {
+				height: 500px;
+				min-width: 400px;
+		
 			}
 		}
 	}
