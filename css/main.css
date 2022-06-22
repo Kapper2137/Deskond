@@ -680,7 +680,7 @@ footer {
   }
 }
 
-@media (min-width: 1233px) {
+@media (min-width: 1500px) {
   .nav__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,6 +688,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 500px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
