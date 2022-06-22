@@ -31,7 +31,7 @@ body {
 	&__item {
 		text-decoration: none;
 		color: #f0f7f8;
-		font-size: 20px;
+		font-size: 30px;
 		padding-top: 1rem;
 		transform: translateX(60%);
 		text-transform: uppercase;
@@ -118,14 +118,13 @@ span {
 			color: #ffffff;
 			font-size: 2.25rem;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-			cursor: crosshair;
+			cursor: cell;
 			z-index: 10;
 		}
 
 		.btn:hover ~ .text {
 			clip-path: circle(160% at 50% 90%);
 		}
-		// po najechaniu na button pokaze nam sie text
 
 		.text {
 			display: flex;
@@ -197,6 +196,92 @@ span {
 	}
 }
 
+.contact {
+	background-color: white;
+	overflow: hidden;
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.6em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		margin-bottom: 2em;
+		padding: 0.6em 1.2em;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.6rem;
+	}
+
+	&__form-textarea {
+		margin-bottom: 2em;
+		padding: 0.6em 1.2em;
+		border: none;
+		border-radius: 8px;
+		font-size: 1.6rem;
+	}
+
+
+}
+
+
+button {
+		position: relative;
+		margin: 20px;
+		padding: 30px 50px;
+		background: none;
+		color: black;
+		border: 1px solid black;
+		border-radius: 8px;
+		font-size: 28px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	button::before,
+	button::after {
+		display: block;
+		position: absolute;
+		content: '';
+		transition: all 0.5s;
+		z-index: -1;
+	}
+.slice::before,
+.slice::after {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(24, 147, 230);
+
+	content: '';
+}
+
+.slice::before {
+	top: -50%;
+	left: -100%;
+	content: '';
+}
+
+.slice::after {
+	bottom: -50%;
+	right: -100%;
+	content: '';
+}
+
+.slice:hover::before {
+	left: 0;
+}
+
+
+.slice:hover::after {
+	right: 0;
+}
+
 // ======================================
 // MEDIA
 // =====================================
@@ -241,61 +326,40 @@ span {
 		}
 	}
 
-
-	.opinions  {
-	
+	.opinions {
 		&__box-quote {
 			margin-bottom: 1em;
 			font-size: 20px;
 			color: #2e2cb4;
 		}
 
-
 		&__box-img {
 			position: absolute;
 			top: 8%;
 			left: 75%;
 			transform: translate(-50%, -50%);
-	
+
 			img {
 				width: 60px;
 				height: 60px;
 				object-fit: cover;
 				border-radius: 50%;
-		
 			}
 		}
 
 		.opinions__box-text {
 			font-size: 16px;
 		}
-
 	}
-
-
-
-	.contact { 
-		position: relative;
-		background-color: white;
-
-	
-	}
-
-
-
 }
 
 @media (min-width: 360px) {
-
-
 	.header {
 		&__text {
 			padding: 0 2em;
 			margin-left: 50px;
 		}
 	}
-
-
 
 	.nav {
 		&__item {
@@ -307,7 +371,7 @@ span {
 	.staff {
 		.cards {
 			.one {
-				p { 
+				p {
 					font-size: 12px;
 				}
 			}
@@ -350,7 +414,7 @@ span {
 		}
 	}
 }
-@media (min-width: 390px) { 
+@media (min-width: 390px) {
 	.header {
 		&__text {
 			padding: 0 2em;
@@ -358,7 +422,7 @@ span {
 		}
 	}
 }
-@media (min-width: 393px)  {
+@media (min-width: 393px) {
 	.header {
 		&__text {
 			padding: 0 3em;
@@ -416,7 +480,7 @@ span {
 				}
 			}
 			.two {
-				p { 
+				p {
 					font-size: 23px;
 				}
 			}
