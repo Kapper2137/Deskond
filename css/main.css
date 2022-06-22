@@ -325,8 +325,8 @@ span {
   border-radius: 8px;
   font-size: 1.6rem;
   width: 100%;
-  min-height: 150px;
   min-width: 100%;
+  min-height: 150px;
 }
 
 button {
