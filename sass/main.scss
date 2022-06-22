@@ -626,3 +626,14 @@ footer {
 		}
 	}
 }
+@media (min-width: 1500px) {
+	.nav {
+		&__items {
+			display: flex;
+			align-items: center;
+			padding-left: 500px;
+			justify-content: space-around;
+		}
+	}
+
+}
