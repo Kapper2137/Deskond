@@ -92,8 +92,6 @@ body {
 	.cards {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 		width: 1000px;
 		z-index: -1000;
 
@@ -587,8 +585,12 @@ footer {
 @media (min-width: 1024px) {
 	.staff {
 		.cards {
+			
 			display: flex;
 			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
 
 			.one {
 				h1,
