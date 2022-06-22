@@ -680,7 +680,7 @@ footer {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1233px) {
   .nav__items {
     display: -webkit-box;
     display: -ms-flexbox;
