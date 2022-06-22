@@ -515,6 +515,9 @@ footer {
   .opinions .opinions__box-text {
     font-size: 16px;
   }
+  .contact button {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 360px) {
@@ -528,6 +531,10 @@ footer {
             transform: translateY(-60%);
     padding-top: 4em;
     padding-left: 0.5em;
+  }
+  .staff .cards .one h1,
+  .staff .cards .one h2 {
+    font-size: 1rem;
   }
   .staff .cards .one p {
     font-size: 12px;
@@ -552,6 +559,10 @@ footer {
   }
   .staff .cards .one {
     font-size: 10px;
+  }
+  .staff .cards .one h1,
+  .staff .cards .one h2 {
+    font-size: 1.2rem;
   }
   .staff .cards .two {
     font-size: 11px;
@@ -578,14 +589,14 @@ footer {
   }
   .staff .cards .one h1,
   .staff .cards .one h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .staff .cards .one p {
     font-size: 13px;
   }
   .staff .cards .two h1,
   .staff .cards .two h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .staff .cards .two p {
     font-size: 15px;
@@ -627,6 +638,17 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .nav__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 500px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .staff .cards {
     display: -webkit-box;
     display: -ms-flexbox;

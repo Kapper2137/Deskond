@@ -28,8 +28,6 @@ body {
 		align-items: center;
 		justify-content: space-evenly;
 		max-width: 1200px;
-	
-		
 	}
 
 	&__item {
@@ -73,13 +71,10 @@ body {
 		color: white;
 	}
 
-
 	span {
 		color: rgb(29, 238, 158);
 	}
 }
-
-
 
 .staff {
 	h2 {
@@ -324,25 +319,18 @@ footer {
 			color: aqua;
 		}
 	}
-
 }
 
-.footer-bottom  {
+.footer-bottom {
 	background-color: #2e2e2e;
 	width: 100%;
 	padding: 20px 0;
 	text-align: center;
 
-
-
-		p {
-			font-size: 2rem;
-		
-
-		}
-
+	p {
+		font-size: 2rem;
+	}
 }
-
 
 // ======================================
 // MEDIA
@@ -413,6 +401,14 @@ footer {
 			font-size: 16px;
 		}
 	}
+
+	.contact { 
+		button { 
+		font-size: 1.2rem;
+		}
+	}
+
+
 }
 
 @media (min-width: 360px) {
@@ -433,6 +429,10 @@ footer {
 	.staff {
 		.cards {
 			.one {
+				h1,
+				h2 {
+					font-size: 1rem;
+				}
 				p {
 					font-size: 12px;
 				}
@@ -467,6 +467,10 @@ footer {
 			margin-right: 100px;
 
 			.one {
+				h1,
+				h2 {
+					font-size: 1.2rem;
+				}
 				font-size: 10px;
 			}
 
@@ -505,7 +509,7 @@ footer {
 			.one {
 				h1,
 				h2 {
-					font-size: 2rem;
+					font-size: 1.3rem;
 				}
 				p {
 					font-size: 13px;
@@ -515,7 +519,7 @@ footer {
 			.two {
 				h1,
 				h2 {
-					font-size: 2rem;
+					font-size: 1.4rem;
 				}
 				p {
 					font-size: 15px;
@@ -583,9 +587,17 @@ footer {
 }
 
 @media (min-width: 1024px) {
+	.nav {
+		&__items {
+			display: flex;
+			align-items: center;
+			padding-left: 500px;
+			justify-content: space-around;
+		}
+	}
+
 	.staff {
 		.cards {
-			
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
