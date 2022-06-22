@@ -21,13 +21,14 @@ body {
 	position: fixed;
 	top: 0;
 	z-index: 1000;
-
+	background-color: rgba(0, 0, 0, 0.6);
 
 	&__items {
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-		background-color: rgba(0, 0, 0, 0.4);
+		max-width: 1200px;
+	
 		
 	}
 
@@ -91,6 +92,8 @@ body {
 	.cards {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 		width: 1000px;
 		z-index: -1000;
 
