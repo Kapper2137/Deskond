@@ -689,7 +689,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 500px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
